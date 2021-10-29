@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+}
+
+/* Structure */
+.button {
+  width: 6em;
+  padding: 0.3em;
+  border-radius: 0.4em;
+  font-size: 2rem;
+}
+
+/* Skins */
+.button--success {
+  background: green;
+}
+
+.button--danger {
+  background: red;
+}
+
+.button--warning {
+  background: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
