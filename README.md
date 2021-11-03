@@ -1,6 +1,6 @@
 # React Props and State
 
-Welcome to the wonderful world of React!
+Welcome back to the wonderful world of React Part 2! This time we'll be investigating React Props and States. Let's get started 🙌
 
 ![React Atom](./public/react-catom.png)
 
@@ -30,7 +30,7 @@ or
 
 Runs the app in the development mode.
 
-The app should open in your browser and you should see some beautiful cat cards - yay, more cats!
+The app should open in your browser and you should recognize some beautiful cat cards!
 
 If the page doesn't open automatically, you can open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
