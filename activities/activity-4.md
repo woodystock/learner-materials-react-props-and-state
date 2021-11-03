@@ -20,14 +20,20 @@ Ok let's break it down. 🔨
 
 - We first told React we were going to insert some JavaScript into our `App.js` return statement by declaring a pair of curly bois (braces)
 
-- We took our cat data, 'cats' and used the `.map()` method to loop through our cats
+- We took our cat data and used the `.map()` method to loop through our cat objects
 
 - For every cat object in our cat data array, we return a `<CatCard />`
+
+- Neat
+
+Your App should look something like this:
+
+![Cats! Cats everywhere!](../public/act-4-example.png)
+
+
+P.s. don't forget to delete your original `<CatCard />` if you haven't already!
 </pre>
 </details>
 
 
-
-
-
-Move on to [Activity 5](./activity-5.md)
+Time to jive in [Activity 5](./activity-5.md) 💃🕺

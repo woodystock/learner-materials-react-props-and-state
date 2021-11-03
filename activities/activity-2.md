@@ -45,4 +45,4 @@ export default CatCard
 </pre>
 </details>
 
-Move on to [Activity 3](./activity-3.md) 😸
+Time to be in [Activity 3](./activity-3.md) 😸
