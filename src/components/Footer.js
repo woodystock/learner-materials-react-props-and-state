@@ -1,4 +1,4 @@
-import icon from '../cat.png'
+import icon from '../assets/cat.png'
 
 function Footer() {
     return (

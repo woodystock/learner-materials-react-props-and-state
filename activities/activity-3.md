@@ -1,37 +1,56 @@
-# Activity 3
+# Activity 3 - Cat Card
 
-In the `components` folder you created earlier create another file called `Header.js`
+Ok! So!
 
-Inside of this file type:
+We've imported our cat Data.
 
-```
-function Header() {
-    return (
+We've created an all seeing, all powerful cat card (well, soon to be!)
 
-    )
-}
+First let's render our cat card on the screen.
 
-export default Header;
-```
+## Step 1
 
-In App.js copy and paste our `h1` and surrounding `header` element into our new `Header.js` component file (after the return statement, between the braces)
+In the return statement, under `<div className="cards__wrapper">` in your App function, render your cat card.
 
-It should look something like [this](https://github.com/techreturners/learner-materials-intro-to-react/blob/activity-4-example-solution/src/components/Header.js)
+<details>
+<summary>Click here to see the answer</summary>
+<pre>
 
-Save `Header.js`
+`<CatCard />`
+</pre>
+</details>
 
-At the top of  `App.js` import the new Header component:
+Your app should look something like this:
 
-`import Header from './components/Header'`
+<details>
+<summary>Click here to see the answer</summary>
+<pre>
 
-Delete our original `<header>` and `<h1>`, replacing them with our new header component:
+![Example](../public/act-3-cat-card-example.png)
+</pre>
+</details>
 
-`<Header/>`
+That's one grumpy pussy cat.
 
-Save `App.js`
+## Step 2
 
-Check the browser
+Ok so we've got one grumpy kitty showing, but that's not much good. We want to show *all* the cats from our cat data on the screen in all their cat glory!
 
-Our app should still work and look the same.. but now our Header code has become a reusable component! Oh yeah! 🥳
+How do we do that? 🤔
 
-Move on to [Activity 4](./activity-4.md)
+Well, our cat data is in an Array, right?
+
+And we know if we want to access each item in an array we can use some kind of....
+
+<details>
+<summary>Click here to see the answer</summary>
+<pre>
+
+for Loop!
+
+Just like we'd loop through a normal array lets loop through our Cat data! 😺 ↬
+
+</pre>
+</details>
+
+Get it done. In [Activity 4](./activity-4.md)
