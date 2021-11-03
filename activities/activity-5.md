@@ -110,5 +110,8 @@ Phew!
 
 Great job. 
 
+That was a lot to get through but I think you'll agree, our cat cards are looking smashing.
 
-When you've done converting the above elements into components you can move on to the extension [Activity 6](./activity-6.md)
+Don't forget to take a break 🌯
+
+Then let's push this to the next level! [Activity 6](./activity-6.md) 
