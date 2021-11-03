@@ -46,6 +46,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   max-width: 62.5em;
+  min-height: 45vh;
 }
 
 .card {
@@ -99,7 +100,6 @@ body {
   background: var(--navy);
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   border-radius: 5px;
   box-shadow: 0 3px 7px 0 rgb(13, 59, 102, 0.2);
@@ -115,11 +115,9 @@ body {
 }
 
 .footer {
-  min-height: 14.375em;
   line-height: 2em;
-  padding-top: 0.625em;
-  padding-bottom: 0.625em;
   margin-top: .5em;
+  padding: 1em 3em;
 }
 
 .footer__section {
