@@ -23,7 +23,7 @@ function App() {
         </div>
       </main>
 
-     <Footer />
+      <Footer />
     </>
   );
 }
