@@ -6,7 +6,7 @@ You've got a sweet little React app that loops through some cat data producing a
 
 Bravo, bravo
 
-There are just a few things we could do to make our app *even better* 
+There are just a few things we could do to make our app *even better* 🔥
 
 # Step 1 - Destructuring 
 
@@ -157,12 +157,15 @@ Add a key property to our `CatCard />` component and call `uuid4`
 <CatCard key={uuidv4()} {...cat}/>
 
 
-// console error key issue
+## Save your file and Check your Browser Console
 
+Poof!
 
+![Cat disappearing into a poof](../public/poof.gif)
 
-# Extension 
+Like a cat in the night, our error warning has disappeared.
 
-// favFoods
+You are now entering React Ninja level... 🥷
 
-// dog data
+[Activity 7 - Extension](./activity-7.md)
+
