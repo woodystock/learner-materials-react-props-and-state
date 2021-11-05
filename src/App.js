@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Header props={cats}/>
 
       <main>
         <div className="cards__wrapper">

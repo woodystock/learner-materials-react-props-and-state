@@ -99,7 +99,7 @@ Let's break it down. 🔨
 
 - We pass these into our CatCard functions parameters `function CatCard(props)`
 
-- We access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors). Because these properties are nested we have to go into props then props again, then cats `props.props.cat`. 
+- We access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors). Because these properties are nested we have to go into props then props again to access each cat `props.props.cat`. 
 
 - We insert these properties into our JSX using curly braces {}
 
@@ -114,4 +114,4 @@ That was a lot to get through but I think you'll agree, our cat cards are lookin
 
 Don't forget to take a break 🌯
 
-Then let's push this to the next level! [Activity 6](./activity-6.md) 
+Then let's see what else we can do with props! [Activity 6](./activity-6.md) 
