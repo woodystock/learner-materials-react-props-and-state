@@ -1,9 +1,11 @@
 
-# Activity 6 - passing Dynamic Data
+# Activity 6 - Passing Dynamic Data
 
-Now we know how to pass props to our components, let's update our Header component to reflect how many cats we have in our ~~basket~~ app.
+Currently our Header says there are 0 cats in our App. This isn't accurate!
 
-One way to do this is my passing our cat data down to Header.
+Now we know how to pass props to our components, let's update our Header component to reflect the true number of cats in our ~~basket~~ application.
+
+One way to do this is by passing cat data down to Header.
 
 Can you remember how to do this without looking?
 
@@ -25,9 +27,9 @@ Can you remember how to do this without looking?
 
 Now our Header is receiving our cat data, we could add some JavaScript to count how many cats there are. 
 
-- How could we count the number of objects in an array in JavaScript?
+- How would we count the number of objects in an array in JavaScript?
 
-- Then how could we insert this JavaScript into our Header element?
+- How could we insert this JavaScript logic into our Header element?
 
 <details>
 <summary>Click here to find out how!</summary>
@@ -52,13 +54,13 @@ Let's break it down. 🔨
 
 - We are passing our cat properties into our Header component
 
-- We are using curly braces to replace the 0 with some JavaScript logic
+- We are using curly braces to replace the 0 with some JavaScript
 
-- We use object dot notation to get to our nested object properties
+- In the curly braces we use JavaScript Dot Notation to get to our nested cat properties
 
 - We use the JavaScript `.length` property to count how many cat objects there are
 
-- Boom! Our Cat App will accurately reflect how many cats there are! 😺
+- Boom! Our Cat App now accurately reflects how many cats there are! 😺
 
 </pre>
 </details>

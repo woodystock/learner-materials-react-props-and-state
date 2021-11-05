@@ -18,13 +18,13 @@ Hint: To insert JavaScript into our HTML or 'JSX' you'll need to write your Java
 
 Ok let's break it down. 🔨
 
-- We first told React we were going to insert some JavaScript into our `App.js` return statement by declaring a pair of curly bois (braces)
+- We first told React we were going to insert some JavaScript into our `App.js` return statement by writing a pair of curly bois (braces)
 
 - We took our cat data and used the `.map()` method to loop through our cat objects
 
 - For every cat object in our cat data array, we return a `<CatCard />`
 
-- Neat
+- Neat 👍
 
 Your App should look something like this:
 

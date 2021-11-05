@@ -1,6 +1,6 @@
 # Activity 1 - Importing Data
 
-Previously in Introduction to React & Components you were given a React project with an App.js file full of code that looked a bit like this:
+Previously in Introduction to React & Components you were given a React project with an `App.js` file full of code that looked a bit like this:
 
 ```
   <div className="cards__wrapper">
@@ -25,9 +25,9 @@ Every cats name and subsequent information had to be hard coded (e.g. we had to 
 
 In this guide we'll be taking a lump (technical term) of cat data, looping through it, passing it to ONE slick and sexy Cat Component and rendering cat information on our page through props - oh yeahhh! 💃🕺
 
-Our 'lump' or 'JSON object' containing Cat data can be round in `src > data > catData.js`
+Our 'lump' or 'JSON object' containing Cat data can be round in `src > data > catData.js`. Check it out 👈
 
-This could have been put in our App.js file but keeping data in a separate file is more modular
+This could have been put in our `App.js` file but keeping data in a separate file is more modular
 
 To access this data, we'll need to import it
 

@@ -2,7 +2,7 @@
 
 In the last Lab you did (Intro to React) you stripped out a load of JSX code and put each piece (like the cards or the header) into their own components.
 
-Let's do this now but instead of having individual cards for each individual cat we're going to have one all seeing, all powerful cat card. 🐈
+Let's do this now but instead of having individual cards for individual cats we're going to have one all seeing, all powerful cat card that looks different depending on what data we feed it. 🐈
 
 ## Step 1
 

@@ -2,7 +2,7 @@
 
 Alright, so you've done it!
 
-You've got a sweet little React app that loops through some cat data producing a gorgeous set of kitty cat cards.
+You've got a sweet little React app that loops through some cat data producing a gorgeous set of kitty cat cards. We use props to pass data between our components and have even used JavaScript to count our cats!
 
 Bravo, bravo
 
@@ -14,7 +14,7 @@ In `CatCat.js` we are accessing props by doing `props.props.name`.
 
 This works fine, but it doesn't look very purrdy!
 
-Using our knowledge of the [Destructuring Assignment](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0) in JavaScript, can we refactor our code to make it look a little neater?
+Using our knowledge of the [Destructuring Assignment](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0) in JavaScript, can you refactor the code to make it look a little neater?
 
 Have a go then...
 
@@ -43,9 +43,9 @@ export default CatCard
 
 Let's break it down. 🔨
 
-- Whereas before we were using object notation to drill into each piece of data we wanted to access from our cat object, we now use JavaScript destructuring assignment to extract the data we need from props.props
+- Whereas before we were using object dot notation to drill into each piece of data we wanted to access from our cat object, we now use JavaScript destructuring assignment to extract the data we need from `props.props`
 
-- We can then use these extracted pieces of data throughout our code, without needing to add the extra props.props object dot notation
+- We can then use these extracted pieces of data throughout our code, without needing to add the extra `props.props` object dot notation
 
 - This makes our code look cleaner. If this file was huge, it would also result in less repetition. Sweet!
 
@@ -53,12 +53,12 @@ Let's break it down. 🔨
 </pre>
 </details>
 
-If we wanted to be even more clever, we could take destructuring one step further by using the [Spread Operator](https://sebhastian.com/react-destructuring/)...
+If we wanted to be even cleverer, we could take Destructuring one step further by using the [Spread Operator](https://sebhastian.com/react-destructuring/)...
 
 Have a go. Then...
 
 <details>
-<summary>Click here to see the how!</summary>
+<summary>Click here to see how!</summary>
 <pre>
 
 ```
@@ -88,12 +88,12 @@ export default CatCard
 
 Let's break it down. 🔨
 
-- Here we use the Spread Operator to loop through the different object properties in `App.js` `<CatCard/>` component `{...cat}`
+- Here we use the Spread Operator to loop through the different object properties in `App.js` `<CatCard />` component `{...cat}`
 
 - Then, in `CatCat.js` we move our Destructuring into our CatCard functions parameters, removing the need to assign these values to props `function CatCard({ name, photo, alt, species, favFoods, birthYear }) {}`
 
 - All three ways of accessing props are perfectly valid. Which one you choose might depend on how much repetition there is in your file. 
-If there isn't much repetition you might not want to use destructuring at all. If there is lots of repetition but lots of property values you want to access, putting them in your functions parameters might get a bit long! So it's up to you how you create the cleanest decision. 
+If there isn't much repetition you might not want to use destructuring at all, which is fine. If there is lots of repetition but lots of property values you want to access, putting them in your functions parameters might get a bit long! So it's up to you how you create the cleanest solution. 
 
 
 </pre>
@@ -102,7 +102,7 @@ If there isn't much repetition you might not want to use destructuring at all. I
 
 And there you have it!
 
-2 neat ways using JavaScript methods to reduce repetition in components! 🙌
+Two neat ways using JavaScript methods to reduce repetition in components! 🙌
 
 
 # Step 2 - console errors
@@ -123,9 +123,9 @@ If these cat cards get added to or deleted, I'm going to lose track. Please give
 
 Cheers".
 
-Sure is polite, for a robot. 
+Sure is polite, for a robot. 🤖
 
-## What is a Key in React?
+## What is a Key in React? 🔑
 
 A Key in React is a unique string
 
@@ -133,31 +133,28 @@ A Key in React is a unique string
 
 You can use the unique key provided on data you get from a database. But sometimes our data won't have a unique key (like our cat data) so we need to make one.
 
-## How do we make one?
+There are lots of different ways to do this. A popular way is using the `npm` package [uuid](https://www.npmjs.com/package/uuid)
 
-There are lots of different ways. A popular one is using the `npm` package [uuid](https://www.npmjs.com/package/uuid)
-
-
-## Step 1
+## Using UUID - Step 1
 
 - In your terminal (make sure you're in the right directory) run:
 
 `npm install uuid`
 
-## Step 2
+## Using UUID - Step 2
 
 At the top of `App.js` import our unique identifier, like so:
 
 `import { v4 as uuidv4 } from 'uuid';`
 
-## Step 3
+## Using UUID - Step 3
 
 Add a key property to our `CatCard />` component and call `uuid4`
 
-<CatCard key={uuidv4()} {...cat}/>
+`<CatCard key={uuidv4()} {...cat}/>`
 
 
-## Save your file and Check your Browser Console
+## Using UUID - Save your file and Check your Browser Console
 
 Poof!
 
@@ -167,5 +164,5 @@ Like a cat in the night, our error warning has disappeared.
 
 You are now entering React Ninja level... 🥷
 
-[Activity 7 - Extension](./activity-7.md)
+[Activity 8 - Extension](./activity-8-extension.md)
 

@@ -1,4 +1,4 @@
-# Activity 3 - Cat Card
+# Activity 3 - Render a Cat Card
 
 Ok! So!
 
