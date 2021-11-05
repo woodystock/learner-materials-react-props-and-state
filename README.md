@@ -2,7 +2,7 @@
 
 Welcome back to the wonderful world of React Part 2! This time we'll be investigating React Props and States. Let's get started 🙌
 
-![React Atom](./public/react-catom.png)
+![React Atom](./public/catom-dog.png)
 
 ## How to Get Started
 
