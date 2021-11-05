@@ -11,7 +11,7 @@ import CatCard from './components/CatCard'
 
 function App() {
 
-  console.log("Our pretties 😻: ", cats)
+  console.log(cats)
   return (
     <>
       <Navbar />
@@ -22,7 +22,7 @@ function App() {
 
           {cats.map(cat => {
             return (
-              <CatCard props={cat}/>
+              <CatCard {...cat}/>
             )
           })}
 

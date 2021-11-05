@@ -42,7 +42,7 @@ Meow, lets get started!
 
 # Learning ~~Recat~~ Recap
 
-![Recap](./public/recat.png)
+![Recap](./public/recat.png )
 
 So previously on Cat Cards The React App we learnt:
 
