@@ -4,7 +4,7 @@ You now have the opportunity to put what you've learnt into practice.
 
 Our journey together ends and from here you're going it alone, Ninjas!
 
-# Extension 1 - Who let the dogs out? You, you, you, you! 🐶
+# Extension 1 - Who let the dogs out? 🐶
 
 [![Guard Dog](../public/guard-dog.png)](https://www.youtube.com/watch?v=Qkuu0Lwb5EM "Who let the dogs out")
 
@@ -36,6 +36,8 @@ Using what you know about JavaScript, passing props and inserting logic through 
 
 # Well done! 🙌
 
-If you've got this far then you are more than getting the hang of React!
+If you've got this far then you are more than getting the hang of React! 
 
-Chuck Norris greatness achieved.
+And it was YOU (YOU YOU YOU!) that let the out.
+
+Chuck Norris greatness achieved. 👊
