@@ -12,7 +12,7 @@ There are just a few things we could do to make our app _even better_ 🔥
 
 In `CatCard.js` and other parts of our app, we are accessing nested props like this `props.name`.
 
-This works fine, but it doesn't look very purrdy!
+This works fine, but it doesn't look very purrdy! 😸
 
 Using our knowledge of the [Destructuring Assignment](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0) in JavaScript, can you refactor the code to make it look a little neater?
 
@@ -43,11 +43,11 @@ export default CatCard
 
 Let's break it down. 🔨
 
-- Whereas before we were using object dot notation to drill into each piece of data we wanted to access from our cat object, we now use JavaScript destructuring assignment to extract the data we need and assign it to `props`
+Whereas before we were using object dot notation to drill into each piece of data we wanted to access from our cat object, we now use JavaScript destructuring assignment to extract the data we need and assign it to `props`
 
-- We can then use these extracted pieces of data as variables throughout our code, without needing to add the extra `.props` object dot notation
+We can then use these extracted pieces of data as variables throughout our code, without needing to add the extra `.props` object dot notation
 
-- This makes our code look cleaner. If this file was huge, or if we had deeply nested properties it would also result in less repetition. Sweet!
+This makes our code look cleaner. If this file was huge, or if we had deeply nested properties it would also result in less repetition. Sweet!
 
 We could take this one step further by doing the destructuring in our Header components parameters, like so:
 
@@ -73,9 +73,11 @@ export default Card
 </pre>
 </details>
 
+Booya! 
+
 Can you update `Header.js` to use destructuring in this way too?
 
-# Step 2 - console errors
+# Step 2 - Console Errors
 
 You may have noticed when checking the console.logs() in your browser window, a little error message sneak in.
 
