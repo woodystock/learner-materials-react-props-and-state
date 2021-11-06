@@ -6,7 +6,7 @@ Our journey together ends and from here you're going it alone, Ninjas!
 
 # Extension 1 - Who let the dogs out? 🐶
 
-[![Guard Dog](../public/guard-dog.png)](https://www.youtube.com/watch?v=Qkuu0Lwb5EM "Who let the dogs out")
+[![Guard Dog](../public/guard-dog.png) | | width=100](https://www.youtube.com/watch?v=Qkuu0Lwb5EM "Who let the dogs out")
 
 Much to our Cats _disgust_, you may have spotted some Dog data lurking around when exploring these files.
 
