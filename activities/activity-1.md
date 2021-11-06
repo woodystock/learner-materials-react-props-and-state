@@ -1,4 +1,4 @@
-# Activity 1 - Using state and feeling great!
+# Activity 1 - Using State and feeling Great!
 
 Previously in Introduction to React & Components you were given a React project with an `App.js` file full of code that looked a bit like this:
 
