@@ -27,10 +27,9 @@ In this guide we'll be taking a lump (technical term) of cat data, adding it to 
 
 ## What is State?
 
-When we talk about State in React, what we're really talking about is the *data* underpinning our application and how that might *change*. React "reacts" to changes in state/data. Whenever the state of a component changes, the component re-renders.
+When we talk about State in React, what we're really talking about is the _data_ underpinning our application and how that might _change_. React "reacts" to changes in state/data. Whenever the state of a component changes, the component re-renders.
 
-To use state in React we have to use the `useState()` function. In React speak, this function is called a hook, but we'll come onto what hooks are in another Lab - for now, just know this is an in-built function React offers us to help keep track of our applications changes. 
-
+To use state in React we have to use the `useState()` function. In React speak, this function is called a hook, but we'll come onto what hooks are in another Lab - for now, just know this is an in-built function React offers us to help keep track of our applications changes.
 
 ## Step 1 - What are we waiting for? Let's use some!
 
@@ -40,7 +39,6 @@ At the top of `App.js` import the `useState()` hook:
 
 Top tip: type code out rather than copy and paste it. This will help you memorize the syntax 😺
 
-
 ## Step 2 - Putting the use in useState()
 
 Our `useState()` function returns two values. One value is our state, the other is a method allowing us to manipulate our state.
@@ -49,7 +47,7 @@ We use JavaScript "destructuring" to grab these values, like this:
 
 `const [ data, useData ] = useState(*our state/data we want React to watch goes here*)`
 
-In this application our state is going to be some cat data. 
+In this application our state is going to be some cat data.
 
 At the top of our `App` function, add this line of code above the return statement:
 
@@ -57,7 +55,7 @@ At the top of our `App` function, add this line of code above the return stateme
 
 Great.
 
-Now we need to tell React what we want our state to be... 
+Now we need to tell React what we want our state to be...
 
 Paste this cat data into our `useState()` functions parameters ():
 
@@ -371,7 +369,7 @@ export default App;
 
 To check it worked, add:
 
-`console.log("Our pretties 😻: ", cats)` 
+`console.log("Our pretties 😻: ", cats)`
 
 Above our App functions return statement. Then check your browser console.
 
@@ -379,7 +377,7 @@ You should see the cat data in the console.
 
 Nice!
 
-Note: You may see a warning that looks a bit like this: 
+Note: You may see a warning that looks a bit like this:
 
 ```
   Line 12:17:  'useCats' is assigned a value but never used  no-unused-vars

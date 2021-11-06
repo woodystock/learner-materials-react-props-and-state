@@ -4,7 +4,7 @@ In the last Lab you did (Intro to React) you stripped out a load of JSX code and
 
 Let's do this now but instead of having individual cards for individual cats we're going to have one all seeing, all powerful cat card, that looks different depending on what data we feed it! 🐈
 
-Can you remember how to create a component? 
+Can you remember how to create a component?
 
 Read on, to find out how...
 

@@ -6,7 +6,7 @@ You've got a sweet little React app that loops through some cat data producing a
 
 Bravo, bravo
 
-There are just a few things we could do to make our app *even better* 🔥
+There are just a few things we could do to make our app _even better_ 🔥
 
 # Step 1 - Destructuring FTW!
 
@@ -26,7 +26,7 @@ Have a go then...
 function CatCard(props) {
 
     const { name, photo, alt, species, favFoods, birthYear } = props
-    
+
     return (
         <div className="card">
             <h3 className="card__text card__header">{name}</h3>
@@ -49,65 +49,31 @@ Let's break it down. 🔨
 
 - This makes our code look cleaner. If this file was huge, or if we had deeply nested properties it would also result in less repetition. Sweet!
 
+We could take this one step further by doing the destructuring in our Header components parameters, like so:
+
+```
+
+function Card ({ name, photo, alt, species, favFoods, birthYear }) {
+
+    return (
+            <div className="card">
+                <h3 className="card__text card__header">{name}</h3>
+                <img className="card__image" src={photo} alt={alt}></img>
+                <p className="card__text">Species: {species}</p>
+                <p className="card__text">Favourite Food(s): {favFoods}</p>
+                <p className="card__text">Birth Year: {birthYear}</p>
+            </div>
+    )
+}
+
+export default Card
+
+```
 
 </pre>
 </details>
 
 Can you update `Header.js` to use destructuring in this way too?
-
-
-## Destructuring using Spread Syntax
-
-If we wanted to be even cleverer, we could take Destructuring one step further by using the [Spread Operator](https://sebhastian.com/react-destructuring/)...
-
-Have a go after reading that article. Then...
-
-<details>
-<summary>Click here to see how!</summary>
-<pre>
-
-```
-// App.js
-
-<CatCard {...cat}/>
-
-
-// CatCard.js
-
-function CatCard({ name, photo, alt, species, favFoods, birthYear }) {
-
-    return (
-        <div className="card">
-            <h3 className="card__text card__header">{name}</h3>
-            <img className="card__image" src={photo} alt={alt}></img>
-            <p className="card__text">Species: {species}</p>
-            <p className="card__text">Favourite Food(s): {favFoods}</p>
-            <p className="card__text">Birth Year: {birthYear}</p>
-        </div>
-    )
-}
-
-export default CatCard
-
-```
-
-Let's break it down. 🔨
-
-- In `App.js`, instead of passing individual cat properties, we pass the whole cat object `<CatCard />`, using Spread Syntax to loop over each property `{...cat}`
-
-- Then, in `CatCard.js` we move our Destructuring into our CatCard functions parameters, removing the need to assign these values to props `function CatCard({ name, photo, alt, species, favFoods, birthYear }) {}`
-
-
-</pre>
-</details>
-
-Note: All three ways of accessing props are perfectly valid. Which one you choose might depend on how much repetition there is in your file. 
-If there isn't much repetition you might not want to use destructuring at all, which is fine. If there is lots of repetition but lots of property values you want to access, putting them in your functions parameters might get a bit long! So it's up to you how you create the cleanest solution. 
-
-And there you have it!
-
-Two neat ways using JavaScript methods to reduce repetition in components! 🙌
-
 
 # Step 2 - console errors
 
@@ -119,13 +85,13 @@ It may have looked something like this:
 
 This is a very common React warning and all React is trying to say is,
 
-"Hi there developer friend,
+    "Hi there developer friend,
 
-I am very clever. But I struggle a bit when it comes to keeping track of lots of different data (like the number of cats you've just looped over, you cat obsessed maniac). 
+    I am very clever. But I struggle a bit when it comes to keeping track of lots of different data (like the number of cats you've just looped over, you cat obsessed maniac).
 
-If these cat cards get added to or deleted, I'm going to lose track. Please give each cat card a unique key so I can keep track of who's coming and going. 
+    If these cat cards get added to or deleted, I'm going to lose track. Please give each cat card a unique key so I can keep track of who's coming and going.
 
-Cheers".
+    Cheers".
 
 Sure is polite, for a robot. 🤖
 
@@ -157,7 +123,6 @@ Add a key property to our `CatCard />` component and call `uuid4`
 
 `<CatCard key={uuidv4()} name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt} />`
 
-
 ## Using UUID - Save your file and Check your Browser Console
 
 Poof!
@@ -169,4 +134,3 @@ Like a cat in the night, our error warning has disappeared.
 You are now entering React Ninja level... 🥷
 
 [Activity 8 - Extension](./activity-8-extension.md)
-

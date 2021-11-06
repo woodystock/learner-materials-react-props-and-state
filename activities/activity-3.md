@@ -17,6 +17,7 @@ In App's return statement, replace the ` {/* And here! */}` comment with your ca
 <pre>
 
 `<CatCard />`
+
 </pre>
 </details>
 
@@ -27,6 +28,7 @@ Your app should look something like this:
 <pre>
 
 ![Example](../public/act-3-example.png)
+
 </pre>
 </details>
 
@@ -34,7 +36,7 @@ That's one grumpy pussy cat.
 
 ## Step 2
 
-Ok so we've got one grumpy kitty showing, but that's not much good. We want to show *all* the cats from our cat data on the screen in all their cat glory!
+Ok so we've got one grumpy kitty showing, but that's not much good. We want to show _all_ the cats from our cat data on the screen in all their cat glory!
 
 How do we do that? 🤔
 

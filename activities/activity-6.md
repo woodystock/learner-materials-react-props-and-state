@@ -1,4 +1,3 @@
-
 # Activity 6 - Passing Dynamic Data
 
 Currently our Header says there are 0 cats in our App. This isn't accurate!
@@ -7,7 +6,7 @@ Now we know how to pass props to our components, let's update our Header compone
 
 This Header count is a perfect example of "state" or "dynamic data" in our app. The number of cats we have might change and our cat count should update to reflect this.
 
-One way to do this is by working out the number of cats in our array and passing this count down to our Header component using props. 
+One way to do this is by working out the number of cats in our array and passing this count down to our Header component using props.
 
 - How would we check or count the number of objects in an array in JavaScript?
 
@@ -42,7 +41,7 @@ Have a go yourself then..
 
 `function Header(props) {..}`
 
-// In Header.js we replace the 0 with our dynamic data 
+// In Header.js we replace the 0 with our dynamic data
 
 ```function Header(props) {
 
@@ -72,7 +71,7 @@ Let's break it down. 🔨
 
 Boom! Our Cat App now accurately reflects how many cats there are - 16! 😺
 
-To test whether our Header component is accurately reflecting our applications state though, let's add another cat to our basket to make sure! 
+To test whether our Header component is accurately reflecting our applications state though, let's add another cat to our basket to make sure!
 
 In our `useState()` function add Captain Catface into our cat data array
 
@@ -87,12 +86,12 @@ In our `useState()` function add Captain Catface into our cat data array
     }
 ```
 
-Our header should now say "There are currently 17 Cats in this Cat App". 
+Our header should now say "There are currently 17 Cats in this Cat App".
 
 Alternatively you could delete a cat and the count should also update.
 
-Great work! 
+Great work!
 
 Our Cat app is now "reacting" to changes in our state! 🙌
 
-Let's push this to the next level! [Activity 7](./activity-7.md) 
+Let's push this to the next level! [Activity 7](./activity-7.md)

@@ -30,11 +30,9 @@ Your App should look something like this:
 
 ![Cats! Cats everywhere!](../public/act-4-example.png)
 
-
 P.s. don't forget to delete your original `<CatCard />` if you haven't already!
 
 </pre>
 </details>
-
 
 Time to jive in [Activity 5](./activity-5.md) 💃🕺

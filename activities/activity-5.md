@@ -14,7 +14,7 @@ Just like Ma and Pa cats pass properties (like silky fur and floofy tails) down 
 
 We do this using Props! Short for..
 
-You guessed it! 
+You guessed it!
 
 Properties.
 
@@ -31,7 +31,6 @@ Simple.
 - In `App.js` we can pass properties from the cat object we're looping over to our cat card like this:
 
 `<CatCard name={cat.name} species={cat.species} />`
-
 
 - Pass all of the cat properties to our cat card in this way. The final code should look like this:
 
@@ -57,7 +56,7 @@ It's just like how a normal JavaScript function receives values - cool 😎
 
 Note: We don't have to call our parameters props here, we could call our parameters data, or cat, or bingoWings if we wanted to! But props is fine for now and will help you remember the lingo 👍
 
-To check our cat card is receiving our cat data properties, add a console log above our cat cards return statement 
+To check our cat card is receiving our cat data properties, add a console log above our cat cards return statement
 
 `console.log("CatCard receiving props from App?! Come in App?! 😸 Props received are: ", props)`
 
@@ -68,7 +67,7 @@ CatCard receiving props from App?! Come in App?! 😸 Props received are:  {name
 
 ```
 
-# Step 2.2 - Accessing Props 
+# Step 2.2 - Accessing Props
 
 Looks like we're all hooked up and ready to go-go!
 
@@ -84,7 +83,7 @@ To do this we simply need to replace our hard-coded cat information with our pro
 
 - Save your work and check the browser.
 
-Your cat cards should now show other cats names! 
+Your cat cards should now show other cats names!
 
 ## Step 2.4
 
@@ -108,7 +107,7 @@ Your cat cards should now show other cats names!
 function CatCard(props) {
 
     console.log("CatCard to App, come in App? Do you read me?", props)
-    
+
     return (
            <div className="card">
             <h3 className="card__text card__header">{props.name}</h3>
@@ -129,13 +128,12 @@ Let's break it down. 🔨
 
 - Our CatCard receives these props through its parameters: `function CatCard(props)`
 
-- In our component, we access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors). 
+- In our component, we access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors).
 
 - We insert these properties into our JSX using curly braces {}
 
 </pre>
 </details>
-
 
 ## Alternatively...
 
@@ -150,7 +148,7 @@ However, if we wanted to, we could just pass the whole cat object like this:
 
      ```
 
-Passing props in the above way would mean we'd access them slightly differently. 
+Passing props in the above way would mean we'd access them slightly differently.
 
 In `CatCard.js` we'd access these as `{props.catObject.name}`, `{props.catObject.species}`, `{props.catObject.favouriteFoods}` because we'd have to go into our props, then go into our cat object, then access the property we wanted.
 
@@ -158,15 +156,14 @@ Passing the whole cat object at once or passing individual properties are both p
 
 Before moving on to the next exercise though, have a play around to make yourself familiar with different ways of passing props and what each word and level of dot notation refers to. It can be a bit confusing at first, but the more you practice the easier it will become. 😺
 
-
 # End of Exercise 5
 
 Phew!
 
-Great job. 
+Great job.
 
 That was a lot to get through but I think you'll agree, our cat cards are looking smashing and we've learnt a lot! 🧠
 
 Don't forget to take a break 🌯
 
-Then let's see what else we can do with props! [Activity 6](./activity-6.md) 
+Then let's see what else we can do with props! [Activity 6](./activity-6.md)
