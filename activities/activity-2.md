@@ -1,12 +1,14 @@
 # Activity 2 - Create a Cat Card
 
-In the last Lab you did (Intro to React) you stripped out a load of JSX code and put each piece (like the cards or the header) into their own components.
+In the last Lab you did (Intro to React & Components) you stripped out a load of JSX code and put each piece (like the cards or the header) into their own components.
 
-Let's do this now but instead of having individual cards for individual cats we're going to have one all seeing, all powerful cat card, that looks different depending on what data we feed it! 🐈
+Let's do this now but instead of having individual cards for individual cats we're going to have one all seeing, all powerful cat card, that looks different depending on what data we feed it! 🐈 👁
 
 Can you remember how to create a component?
 
-Read on, to find out how...
+Have a go! 
+
+Then read on, to find out how...
 
 ## Step 1
 
