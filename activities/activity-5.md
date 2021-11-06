@@ -4,9 +4,9 @@ Awesome.
 
 We now have a cat card rendering for every cat in our data. All 16 of them!
 
-But each cat card currently shows Mr Gwumpy. 
+But each cat card currently shows Mr Gwumpy. 😾
 
-As adorable as he is, the rest of the cats need their time to shine. 
+As adorable as he is, the rest of the cats need their time to shine. ☀️
 
 How do we make each card show information for each individual cat?
 
@@ -18,7 +18,7 @@ You guessed it!
 
 Properties.
 
-## What are "Props"?
+## What are "Props"? 🤔
 
 You pass variables to functions, you pass "props" to React components. It's really that simple! Props just means data.
 
@@ -57,7 +57,7 @@ In `CatCard.js` update the CatCard functions parameters to receive some deliciou
 function CatCard(props) {...}
 ```
 
-It's just like how a normal JavaScript function receives values - cool!
+It's just like how a normal JavaScript function receives values - cool 😎
 
 Again, we don't have to call these props here, we could call our parameters bingoWings if we wanted to. But props is fine for now.
 
@@ -138,7 +138,7 @@ Let's break it down. 🔨
 
 ## Alternatively...
 
-In the above instructions, we pass the entire cat object. 
+In the above instructions, we pass the entire cat object calling it props. 
 
 However, instead of passing the whole cat object:
 
@@ -167,7 +167,13 @@ In `CatCard.js` we'd access these as `{props.name}`, `{props.species}`, `{props.
 
 This is because we're already doing one level of dot notation in `App.js`, rather than having to do it in `CatCard.js` because we passed the whole object.
 
-Either way is fine - it's up to you which you prefer. As we want to use all the cats properties, in this tutorial we're going to carry on passing the whole cat object. 
+It's also important to note that "props" in the above examples `{props.name}`, `{props.species}`, `{props.favouriteFoods}` is relating to our CatCard functions parameters name. If we changed the parameter to bingoWings we'd access these properties as `{bingoWings.name}`, `{bingoWings.species}`, `{bingoWings.favouriteFoods}`
+
+Passing the whole cat object at once or passing individual properties are both perfectly fine ways of writing React code - it's up to you which way prefer and how you'd like to name things. 
+However, as we want to use all the cats properties, in this tutorial we're going to carry on passing the whole cat object. 
+
+Before moving on to the next exercise though, have a play around to make yourself familiar with different ways of passing props and what each word and level of dot notation refers to. It can be a bit confusing at first, but the more you practice the easier it will become. 😺
+
 
 # End of Exercise 5
 
@@ -175,7 +181,7 @@ Phew!
 
 Great job. 
 
-That was a lot to get through but I think you'll agree, our cat cards are looking smashing and we've learnt a lot!
+That was a lot to get through but I think you'll agree, our cat cards are looking smashing and we've learnt a lot! 🧠
 
 Don't forget to take a break 🌯
 
