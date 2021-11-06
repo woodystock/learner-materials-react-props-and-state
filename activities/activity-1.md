@@ -47,7 +47,7 @@ Our `useState()` function returns two values. One value is our state, the other 
 
 We use JavaScript "destructuring" to grab these values, like this:
 
-`const [ state, useState ] = useState(*our state/data goes here*)`
+`const [ data, useData ] = useState(*our state to watch/data goes here*)`
 
 In this application our state is going to be some cat data. 
 
