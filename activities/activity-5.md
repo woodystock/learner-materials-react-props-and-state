@@ -26,7 +26,7 @@ How do we do this in React?
 
 Simple.
 
-## Step 1 - Pass the parcel
+## Step 1 - Passing Properties
 
 - In `App.js` add a property to our `<CatCard />` like this:
 
