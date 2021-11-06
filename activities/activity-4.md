@@ -2,7 +2,7 @@
 
 In `App.js` create a forLoop to render your Cat Card
 
-Hint: To insert JavaScript into our HTML or 'JSX' you'll need to write your JavaScript code inside a pair of curly braces { }
+Hint: To insert JavaScript into our HTML or 'JSX' you'll need to write your JavaScript code inside a pair of curly braces { }.
 
 <details>
 <summary>Click here to see the answer</summary>
@@ -32,6 +32,7 @@ Your App should look something like this:
 
 
 P.s. don't forget to delete your original `<CatCard />` if you haven't already!
+
 </pre>
 </details>
 

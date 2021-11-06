@@ -2,15 +2,15 @@
 
 Ok! So!
 
-We've imported our cat Data.
+We've created some cat data "state" for React to watch.
 
 We've created an all seeing, all powerful cat card (well, soon to be!)
 
-First let's render our cat card on the screen.
+Now before we hook these two up to each other, let's render our cat card on the screen.
 
 ## Step 1
 
-In the return statement, under `<div className="cards__wrapper">` in your App function, render your cat card.
+In App's return statement, under replace the `{Your code here!}` comment with your cat card.
 
 <details>
 <summary>Click here to see the answer</summary>
@@ -26,7 +26,7 @@ Your app should look something like this:
 <summary>Click here to see the answer</summary>
 <pre>
 
-![Example](../public/act-3-cat-card-example.png)
+![Example](../public/act-3-example.png)
 </pre>
 </details>
 
@@ -46,9 +46,9 @@ And we know if we want to access each item in an array we can use some kind of..
 <summary>Click here to see the answer</summary>
 <pre>
 
-for Loop!
+For Loop!
 
-Just like we'd loop through a normal array lets loop through our Cat data! 😺 ↬
+Just like we'd loop through a normal array, lets loop through our Cat data! It's just an array of objects after all 😺 ↬
 
 </pre>
 </details>

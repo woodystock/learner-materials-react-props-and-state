@@ -1,4 +1,4 @@
-# Activity 5 
+# Activity 5 - Passing Props
 
 Awesome.
 
@@ -10,9 +10,7 @@ As adorable as he is, the rest of the cats need their time to shine.
 
 How do we make each card show information for each individual cat?
 
-# Step 1 - Pass Props
-
-Just like a Ma and Pa cats pass properties (like silky fur and floofy tails) down to their kitty offspring we need to pass our cat data object's properties down to our cat card.
+Just like Ma and Pa cats pass properties (like silky fur and floofy tails) down to their kitty offspring, we need to pass our cat data object's properties down to our cat card.
 
 We do this using Props! Short for..
 
@@ -20,21 +18,36 @@ You guessed it!
 
 Properties.
 
-## What is "props"?
+## What are "Properties"?
 
 You pass variables to functions, you pass "props" to React components. It's really that simple. Props just means data.
 
-How do we do this?
+How do we do this in React?
 
 Simple.
 
+## Step 1 - Pass the parcel
+
 - In `App.js` add a property to our `<CatCard />` like this:
 
-`CatCard props={cat} />`
+`<CatCard props={cat} />`
+
+
+- `{cat}` in this example is the cat object our `.map()` method is looping over. To prove this, add a `console.log()` to our `.map()` function then check your browser console:
+
+          ```
+          {cats.map(cat => {
+              console.log("Cat = ", cat)
+            return  <CatCard props={cat}/>
+          })}
+
+          ```
+
+Don't forget to delete your console logs after you've checked them to help keep things tidy.
 
 Note: you don't have to call props 'props'. In fact, depending on the data or 'properties' that you're passing, it might be better you choose a more suitable name. Other things we might want to call our props in this example could be `CatCard cat={cat} />` or `CatCard data={cat} />`. But we'll leave it as `props` for now so you can remember the lingo. 
 
-# Step 2 - Receive Props
+# Step 2 - Receiving Props
 
 In `CatCard.js` update the CatCard functions parameters to receive some delicious 'props'
 
@@ -42,7 +55,9 @@ In `CatCard.js` update the CatCard functions parameters to receive some deliciou
 function CatCard(props) {...}
 ```
 
-Again, we don't have to call this props, we could call it bingoWings if we wanted to. But props is fine for now.
+It's just like how a normal JavaScript function receives values - cool!
+
+Again, we don't have to call these props here, we could call our parameters bingoWings if we wanted to. But props is fine for now.
 
 To check our cat card is receiving our cat data properties, add a console log above our cat cards return statement 
 
@@ -66,21 +81,21 @@ To do this we simply need to replace our hard-coded cat information with our pro
 
 - Save your work and check the browser.
 
-Your cat cards should now show other cats names! Yay.
+Your cat cards should now show other cats names! 
 
 ## Step 2
 
 - In the `img` tag, replace the `src` attributes string with `{props.props.photo}` and the `alt` attributes string with `{props.props.alt}`
 
-- It should now look like this:
+- It should look like this:
 
 `<img className="card__image" src={props.props.photo} alt={props.props.alt}></img>`
 
-- Your cat cards should now show other cats pictures with accessible alt attributes
+- Your cat cards should now show other cats pictures with accessible alt attributes. Yay.
 
 ## Step 3
 
-- Following the same pattern, can you replace the rest of the hard coded data with props? Remember to look in `catData.js` to check what properties the cat objects have. Or alternatively, you can console.log() props and check your browser console for props there. 
+- Following the same pattern, can you replace the rest of the hard coded data with props? Remember to check our `useStates()` cat data to check what properties our cat objects have. Or alternatively, you can console.log() props and check your browser console for what property names are there. 
 
 <details>
 <summary>Click here to see the final result</summary>
@@ -107,11 +122,11 @@ export default CatCard
 
 Let's break it down. 🔨
 
-- We are passing `props` into our `<CatCard props={cat}/>`
+- We are passing `props` into our cat card: `<CatCard props={cat}/>`
 
-- We pass these into our CatCard functions parameters `function CatCard(props)`
+- Our CatCard receives these props through its parameters: `function CatCard(props)`
 
-- We access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors). Because these properties are nested we have to go into props then props again to access each cat `props.props.cat`. 
+- In our component, we access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors). Because these properties are nested we have to go into props then props again to access each cat `props.props.cat`. 
 
 - We insert these properties into our JSX using curly braces {}
 

@@ -8,9 +8,9 @@ Bravo, bravo
 
 There are just a few things we could do to make our app *even better* 🔥
 
-# Step 1 - Destructuring 
+# Step 1 - Destructuring, destructuring!
 
-In `CatCat.js` we are accessing props by doing `props.props.name`.
+In `CatCard.js` and other parts of our app, we are accessing nested props like this `props.props.name`.
 
 This works fine, but it doesn't look very purrdy!
 
@@ -45,7 +45,7 @@ Let's break it down. 🔨
 
 - Whereas before we were using object dot notation to drill into each piece of data we wanted to access from our cat object, we now use JavaScript destructuring assignment to extract the data we need from `props.props`
 
-- We can then use these extracted pieces of data throughout our code, without needing to add the extra `props.props` object dot notation
+- We can then use these extracted pieces of data as variables throughout our code, without needing to add the extra `props.props` object dot notation
 
 - This makes our code look cleaner. If this file was huge, it would also result in less repetition. Sweet!
 
@@ -55,7 +55,7 @@ Let's break it down. 🔨
 
 If we wanted to be even cleverer, we could take Destructuring one step further by using the [Spread Operator](https://sebhastian.com/react-destructuring/)...
 
-Have a go. Then...
+Have a go after reading that article. Then...
 
 <details>
 <summary>Click here to see how!</summary>
@@ -90,14 +90,14 @@ Let's break it down. 🔨
 
 - Here we use the Spread Operator to loop through the different object properties in `App.js` `<CatCard />` component `{...cat}`
 
-- Then, in `CatCat.js` we move our Destructuring into our CatCard functions parameters, removing the need to assign these values to props `function CatCard({ name, photo, alt, species, favFoods, birthYear }) {}`
-
-- All three ways of accessing props are perfectly valid. Which one you choose might depend on how much repetition there is in your file. 
-If there isn't much repetition you might not want to use destructuring at all, which is fine. If there is lots of repetition but lots of property values you want to access, putting them in your functions parameters might get a bit long! So it's up to you how you create the cleanest solution. 
+- Then, in `CatCard.js` we move our Destructuring into our CatCard functions parameters, removing the need to assign these values to props `function CatCard({ name, photo, alt, species, favFoods, birthYear }) {}`
 
 
 </pre>
 </details>
+
+Note: All three ways of accessing props are perfectly valid. Which one you choose might depend on how much repetition there is in your file. 
+If there isn't much repetition you might not want to use destructuring at all, which is fine. If there is lots of repetition but lots of property values you want to access, putting them in your functions parameters might get a bit long! So it's up to you how you create the cleanest solution. 
 
 
 And there you have it!
@@ -151,7 +151,7 @@ At the top of `App.js` import our unique identifier, like so:
 
 Add a key property to our `CatCard />` component and call `uuid4`
 
-`<CatCard key={uuidv4()} {...cat}/>`
+`<CatCard key={uuidv4()} props={cat} />`
 
 
 ## Using UUID - Save your file and Check your Browser Console
