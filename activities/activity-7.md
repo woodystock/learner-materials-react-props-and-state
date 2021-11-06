@@ -48,8 +48,17 @@ Whereas before we were using object dot notation to drill into each piece of dat
 We can then use these extracted pieces of data as variables throughout our code, without needing to add the extra `.props` object dot notation
 
 This makes our code look cleaner. If this file was huge, or if we had deeply nested properties it would also result in less repetition. Sweet!
+    
+</pre>
+</details>
+
+Booya!
 
 We could take this one step further by doing the destructuring in our Header components parameters, like so:
+
+<details>
+<summary>Click here to see the answer!</summary>
+<pre>
 
 ```
 
@@ -72,8 +81,6 @@ export default Card
 
 </pre>
 </details>
-
-Booya! 
 
 Can you update `Header.js` to use destructuring in this way too?
 
