@@ -20,7 +20,7 @@ Properties.
 
 ## What are "Properties"? 🤔
 
-You pass variables to functions, you pass "props" to React components. It's really that simple! Props just means data. This data could be a string, a number, a piece of state or more often than not, the properties of an object (like our cat objects properties).
+You pass variables to functions, you pass "props" to React components. It's really that simple! Props just means data. This data could be a string, a number, an array or more often than not, the properties of an object (like our cat objects properties).
 
 How do we do this in React?
 
@@ -36,13 +36,12 @@ Simple.
 
           ```
           {cats.map(cat => {
-              console.log("Cat = ", cat)
             return  <CatCard name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt}/>
           })}
 
           ```
 
-Note: you don't have to call your props the same name as the property names themselves. Instead of "name" etc, you could call the property `catName={cat.name}` or "favFoods" `favouriteFoods={cat.favFoods}`.
+Note: you don't have to call your props the same name as the property names themselves. Instead of "name" etc, you could call the property `catName={cat.name}` or "favFoods" `favouriteFoods={cat.favFoods}` or even `abracadabra={cat.name}`.
 
 # Step 2 - Receiving Properties
 
@@ -52,7 +51,7 @@ In `CatCard.js` update the CatCard functions parameters to receive some deliciou
 function CatCard(props) {...}
 ```
 
-It's just like how a normal JavaScript function receives values - cool 😎
+It's just like how a normal JavaScript function receives stuff - cool 😎
 
 Note: We don't have to call our parameters props here, we could call our parameters data, or cat, or bingoWings if we wanted to! But props is fine for now and will help you remember the lingo 👍
 
