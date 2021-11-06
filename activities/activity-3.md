@@ -55,4 +55,4 @@ Just like we'd loop through a normal array, lets loop through our Cat data! It's
 </pre>
 </details>
 
-Ready for more? [Activity 4](./activity-4.md)!
+See [Activity 4](./activity-4.md) to find out more!
