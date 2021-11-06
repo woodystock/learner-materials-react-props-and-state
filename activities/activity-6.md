@@ -43,7 +43,8 @@ Have a go yourself then..
 
 // In Header.js we replace the 0 with our dynamic data
 
-```function Header(props) {
+```
+function Header(props) {
 
   return (
     <header className="header__container">
@@ -58,13 +59,13 @@ export default Header
 
 Let's break it down. 🔨
 
-- In App.js we use the JavaScript `.length` property to count how many cat objects there are and save this number to a variable
+In App.js we use the JavaScript `.length` property to count how many cat objects there are and save this number to a variable
 
-- We pass this variable to our Header component using props
+We pass this variable to our Header component using props
 
-- Our Header component receives our props through it's parameters
+Our Header component receives our props through it's parameters
 
-- We use curly braces to replace the 0 in our h2 with our props
+We use curly braces to replace the 0 in our h2 with our props
 
 </pre>
 </details>
