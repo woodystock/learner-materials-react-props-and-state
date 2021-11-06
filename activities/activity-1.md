@@ -25,7 +25,7 @@ Every cats name and subsequent information had to be hard coded (e.g. we had to 
 
 In this guide we'll be taking a lump (technical term) of cat data, adding it to Reacts `useState()` function, looping through it, passing it to ONE slick and sexy Cat Component and rendering cat information on our page through props - oh yeahhh! 💃🕺
 
-## What is State?
+## Ok, so what is State?
 
 When we talk about State in React, what we're really talking about is the _data_ underpinning our application and how that might _change_. React "reacts" to changes in state/data. Whenever the state of a component changes, the component re-renders.
 
