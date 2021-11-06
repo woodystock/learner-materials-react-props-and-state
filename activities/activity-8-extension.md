@@ -38,6 +38,6 @@ Using what you know about JavaScript, passing props and inserting logic through 
 
 If you've got this far then you are more than getting the hang of React! 
 
-And it was YOU (YOU YOU YOU!) that let the out.
+And it was you (YOU YOU YOU!) that let the dogs out.
 
 Chuck Norris greatness achieved. 👊
