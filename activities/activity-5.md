@@ -20,7 +20,7 @@ Properties.
 
 ## What are "Props"?
 
-You pass variables to functions, you pass "props" to React components. It's really that simple. Props just means data.
+You pass variables to functions, you pass "props" to React components. It's really that simple! Props just means data.
 
 How do we do this in React?
 
