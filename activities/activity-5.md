@@ -28,26 +28,22 @@ Simple.
 
 # Step 1 - Passing Properties
 
-- In `App.js` add a property to our `<CatCard />` like this:
+- In `App.js` we can pass properties from the cat object we're looping over to our cat card like this:
 
-`<CatCard props={cat} />`
+`<CatCard name={cat.name} species={cat.species} />`
 
 
-- `{cat}` in this example is the whole cat object our `.map()` method is looping over. To prove this, add a `console.log()` to our `.map()` function then check your browser console:
+- Pass all of the cat properties to our cat card in this way. The final code should look like this:
 
           ```
           {cats.map(cat => {
               console.log("Cat = ", cat)
-            return  <CatCard props={cat}/>
+            return  <CatCard name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt}/>
           })}
 
           ```
 
-You should see "Cat =" followed by each cat object in your browser! 😊
-
-Don't forget to delete your console logs after you've checked them to help keep things tidy. 🧹
-
-Note: you don't have to call props 'props'. In fact, depending on the data or 'properties' that you're passing, it might be better you choose a more suitable name. Other things we might want to call our props in this example could be `CatCard cat={cat} />`, `CatCard catObject={cat} />` or `CatCard data={cat} />`. But we'll leave it as `props` for now so you can remember the lingo. 
+Note: you don't have to call your props the same name as the property names themselves. Instead of "name" etc, you could call the property `catName={cat.name}` or "favFoods" `favouriteFoods={cat.favFoods}`.
 
 # Step 2 - Receiving Properties
 
@@ -59,13 +55,18 @@ function CatCard(props) {...}
 
 It's just like how a normal JavaScript function receives values - cool 😎
 
-Again, we don't have to call these props here, we could call our parameters bingoWings if we wanted to. But props is fine for now.
+Note: We don't have to call our parameters props here, we could call our parameters data, or cat, or bingoWings if we wanted to! But props is fine for now and will help you remember the lingo 👍
 
 To check our cat card is receiving our cat data properties, add a console log above our cat cards return statement 
 
-`console.log("CatCard to App, come in App? Do you read me?", props)`
+`console.log("CatCard receiving props from App?! Come in App?! 😸 Props received are: ", props)`
 
-Check your browser console. You should see your console.log() printed lots of times. There will be a small arrow next to each of these logs. If you click on this, a drop down will show you your props - they're our cat objects!
+Check your browser console. You should see your console.log() printed out lots of times. Each log should show the cat properties you have passed to your cat component like this:
+
+```
+CatCard receiving props from App?! Come in App?! 😸 Props received are:  {name: 'Little Miss Purrfect', species: 'Cat', favFoods: Array(2), birthYear: 2016, photo: 'https://learnwebcode.github.io/json-example/images/cat-2.jpg', …}
+
+```
 
 # Step 2.2 - Accessing Props 
 
@@ -79,7 +80,7 @@ To do this we simply need to replace our hard-coded cat information with our pro
 
 ## Step 2.3
 
-- In the cat cards `<h3>` replace Mr Gwumpy with `{props.props.name}`
+- In the cat cards `<h3>` replace Mr Gwumpy with `{props.name}`
 
 - Save your work and check the browser.
 
@@ -87,17 +88,17 @@ Your cat cards should now show other cats names!
 
 ## Step 2.4
 
-- In the `img` tag, replace the `src` attributes string with `{props.props.photo}` and the `alt` attributes string with `{props.props.alt}`
+- In the `img` tag, replace the `src` attributes string with `{props.photo}` and the `alt` attributes string with `{props.alt}`
 
 - It should look like this:
 
-`<img className="card__image" src={props.props.photo} alt={props.props.alt}></img>`
+`<img className="card__image" src={props.photo} alt={props.alt}></img>`
 
 - Your cat cards should now show other cats pictures with accessible alt attributes. Yay.
 
 ## Step 2.5
 
-- Following the same pattern, can you replace the rest of the hard coded data with props? Remember to check our `useStates()` cat data to check what properties our cat objects have. Or alternatively, you can console.log() props and check your browser console for what property names are there. 
+- Following the same pattern, replace the rest of the hard coded data with props
 
 <details>
 <summary>Click here to see the final result</summary>
@@ -109,12 +110,12 @@ function CatCard(props) {
     console.log("CatCard to App, come in App? Do you read me?", props)
     
     return (
-        <div className="card">
-            <h3 className="card__text card__header">{props.props.name}</h3>
-            <img className="card__image" src={props.props.photo} alt={props.props.alt}></img>
-            <p className="card__text">Species: {props.props.species}</p>
-            <p className="card__text">Favourite Food(s): {props.props.favFoods}</p>
-            <p className="card__text">Birth Year: {props.props.birthYear}</p>
+           <div className="card">
+            <h3 className="card__text card__header">{props.name}</h3>
+            <img className="card__image" src={props.photo} alt={props.alt}></img>
+            <p className="card__text">Species: {props.species}</p>
+            <p className="card__text">Favourite Food(s): {props.favFoods}</p>
+            <p className="card__text">Birth Year: {props.birthYear}</p>
         </div>
     )
 }
@@ -128,7 +129,7 @@ Let's break it down. 🔨
 
 - Our CatCard receives these props through its parameters: `function CatCard(props)`
 
-- In our component, we access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors). Because these properties are nested we have to go into props then props again to access each cat `props.props.cat`. 
+- In our component, we access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors). 
 
 - We insert these properties into our JSX using curly braces {}
 
@@ -138,39 +139,22 @@ Let's break it down. 🔨
 
 ## Alternatively...
 
-In the above instructions, we pass the entire cat object calling it props. 
+In the above instructions, we pass each cat property separately into our CatCard component. This is perfectly fine.
 
-However, instead of passing the whole cat object:
+However, if we wanted to, we could just pass the whole cat object like this:
 
     ```
           {cats.map(cat => {
-            return  <CatCard props={cat}/>
+            return  <CatCard catObject={cat}/>
           })}
 
      ```
-    
-
-We could choose to pass each property individually like this:
-
-    ```
-          {cats.map(cat => {
-            return  <CatCard name={cat.name} species={cat.species} favouriteFoods={cat.favFoods} birthYear={cat.birthYear} />
-          })}
-
-    ```
-
-This would pass the cats name, species, favourite foods and birth year, but wouldn't pass the photo or alt attribute.
 
 Passing props in the above way would mean we'd access them slightly differently. 
 
-In `CatCard.js` we'd access these as `{props.name}`, `{props.species}`, `{props.favouriteFoods}` instead of `{props.props.name}` like we did earlier.
+In `CatCard.js` we'd access these as `{props.catObject.name}`, `{props.catObject.species}`, `{props.catObject.favouriteFoods}` because we'd have to go into our props, then go into our cat object, then access the property we wanted.
 
-This is because we're already doing one level of dot notation in `App.js`, rather than having to do it in `CatCard.js` because we passed the whole object.
-
-It's also important to note that "props" in the above examples `{props.name}`, `{props.species}`, `{props.favouriteFoods}` is relating to our CatCard functions parameters name. If we changed the parameter to bingoWings we'd access these properties as `{bingoWings.name}`, `{bingoWings.species}`, `{bingoWings.favouriteFoods}`
-
-Passing the whole cat object at once or passing individual properties are both perfectly fine ways of writing React code - it's up to you which way prefer and how you'd like to name things. 
-However, as we want to use all the cats properties, in this tutorial we're going to carry on passing the whole cat object. 
+Passing the whole cat object at once or passing individual properties are both perfectly fine ways of writing React code - it's up to you which way prefer and how you'd like to name things. Passing the whole cat object makes `App.js` a little tidier, however for this tutorial we're going to continue passing the cat properties individually as this can be a bit easier to understand when first learning about props in React.
 
 Before moving on to the next exercise though, have a play around to make yourself familiar with different ways of passing props and what each word and level of dot notation refers to. It can be a bit confusing at first, but the more you practice the easier it will become. 😺
 

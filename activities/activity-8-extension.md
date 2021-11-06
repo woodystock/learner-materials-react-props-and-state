@@ -34,7 +34,7 @@ You may have noticed that in our cat cards, our cats favorite foods are squished
 
 This is because some of the food items are in an array and when they are rendered on the page our program doesn't know there needs to be a white space and comma between each item.
 
-Using what you know about JavaScript and inserting logic through curly braces {}, could you write some logic so that favorite foods are joined together nicely with a comma separating each food item?
+Using what you know about JavaScript, passing props and inserting logic through curly braces {}, could you write some logic so that favorite foods are joined together nicely with a comma separating each food item?
 
 
 # Well done! 🙌

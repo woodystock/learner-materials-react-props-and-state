@@ -47,7 +47,7 @@ Our `useState()` function returns two values. One value is our state, the other 
 
 We use JavaScript "destructuring" to grab these values, like this:
 
-`const [ data, useData ] = useState(*our state to watch/data goes here*)`
+`const [ data, useData ] = useState(*our state/data we want React to watch goes here*)`
 
 In this application our state is going to be some cat data. 
 
@@ -347,10 +347,12 @@ function App() {
       <Navbar />
       <Header />
 
+      // Your code here!
+
       <main>
         <div className="cards__wrapper">
 
-          {/* Your code here! */}
+          {/* And here! */}
 
         </div>
       </main>
@@ -376,5 +378,13 @@ Above our App functions return statement. Then check your browser console.
 You should see the cat data in the console.
 
 Nice!
+
+Note: You may see a warning that looks a bit like this: 
+
+```
+  Line 12:17:  'useCats' is assigned a value but never used  no-unused-vars
+```
+
+This is just telling us that one of our `useState()` variables isn't being used. Ignore this for now, we come onto this is another lab 🙂
 
 Time to for [Activity 2](./activity-2.md)

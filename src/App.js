@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 
 function App() {
 
+  // Your code here!
+
   return (
     <>
       <Navbar />
@@ -13,7 +15,7 @@ function App() {
       <main>
         <div className="cards__wrapper">
 
-          {/* Your code here! */}
+          {/* And here! */}
 
         </div>
       </main>
