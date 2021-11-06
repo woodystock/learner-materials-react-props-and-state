@@ -123,13 +123,13 @@ export default CatCard
 
 Let's break it down. 🔨
 
-- We are passing `props` into our cat card: `<CatCard props={cat}/>`
+We are passing `props` into our cat card: `<CatCard props={cat}/>`
 
-- Our CatCard receives these props through its parameters: `function CatCard(props)`
+Our CatCard receives these props through its parameters: `function CatCard(props)`
 
-- In our component, we access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors).
+In our component, we access these properties through object [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors).
 
-- We insert these properties into our JSX using curly braces {}
+We insert these properties into our JSX using curly braces {}
 
 </pre>
 </details>
