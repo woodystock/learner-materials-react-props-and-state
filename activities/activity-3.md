@@ -24,7 +24,7 @@ In App's return statement, replace the ` {/* And here! */}` comment with your ca
 Your app should now look something like this:
 
 <details>
-<summary>Click here to see the answer</summary>
+<summary>Click here to see the result</summary>
 <pre>
 
 ![Example](../public/act-3-example.png)
