@@ -66,7 +66,7 @@ CatCard receiving props from App?! Come in App?! 😸 Props received are:  {name
 
 ```
 
-# Step 2.2 - Accessing Props
+# Step 3 - Accessing Properties
 
 Looks like we're all hooked up and ready to go-go!
 
@@ -76,7 +76,7 @@ Now we just need to inject 💉 our card with catty data using JavaScript.
 
 To do this we simply need to replace our hard-coded cat information with our props.
 
-## Step 2.3
+## Step 3.1
 
 - In the cat cards `<h3>` replace Mr Gwumpy with `{props.name}`
 
@@ -84,7 +84,7 @@ To do this we simply need to replace our hard-coded cat information with our pro
 
 Your cat cards should now show other cats names!
 
-## Step 2.4
+## Step 3.2
 
 - In the `img` tag, replace the `src` attributes string with `{props.photo}` and the `alt` attributes string with `{props.alt}`
 
@@ -94,7 +94,7 @@ Your cat cards should now show other cats names!
 
 - Your cat cards should now show other cats pictures with accessible alt attributes. Yay.
 
-## Step 2.5
+## Step 3.3
 
 - Following the same pattern, replace the rest of the hard coded data with props
 
