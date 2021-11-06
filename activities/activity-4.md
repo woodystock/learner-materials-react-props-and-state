@@ -27,13 +27,20 @@ Ok let's break it down. 🔨
 
 - Neat 👍
 
+</pre>
+</details>
+
 Your App should look something like this:
+
+<details>
+<summary>Click here to see the result</summary>
+<pre>
 
 ![Cats! Cats everywhere!](../public/act-4-example.png)
 
-P.s. don't forget to delete your original `<CatCard />` if you haven't already!
-
 </pre>
 </details>
+
+P.s. don't forget to delete your original `<CatCard />` if you haven't already!
 
 Time to jive in [Activity 5](./activity-5.md) 💃🕺
