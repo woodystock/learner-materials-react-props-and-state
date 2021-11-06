@@ -1,4 +1,4 @@
-# Activity 5 - Passing Props
+# Activity 5 - Passing "Props"
 
 Awesome.
 
