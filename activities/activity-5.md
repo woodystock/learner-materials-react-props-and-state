@@ -18,7 +18,7 @@ You guessed it!
 
 Properties.
 
-## What are "Properties"?
+## What are "Props"?
 
 You pass variables to functions, you pass "props" to React components. It's really that simple. Props just means data.
 
@@ -26,7 +26,7 @@ How do we do this in React?
 
 Simple.
 
-## Step 1 - Passing Properties
+# Step 1 - Passing Properties
 
 - In `App.js` add a property to our `<CatCard />` like this:
 
@@ -47,7 +47,7 @@ Don't forget to delete your console logs after you've checked them to help keep 
 
 Note: you don't have to call props 'props'. In fact, depending on the data or 'properties' that you're passing, it might be better you choose a more suitable name. Other things we might want to call our props in this example could be `CatCard cat={cat} />` or `CatCard data={cat} />`. But we'll leave it as `props` for now so you can remember the lingo. 
 
-# Step 2 - Receiving Props
+# Step 2 - Receiving Properties
 
 In `CatCard.js` update the CatCard functions parameters to receive some delicious 'props'
 
@@ -65,7 +65,7 @@ To check our cat card is receiving our cat data properties, add a console log ab
 
 Check your browser console. You should see your console.log() printed lots of times. There will be a small arrow next to each of these logs. If you click on this, a drop down will show you your props - it's just an object!
 
-# Step 3 - Accessing Props 
+# Step 2.2 - Accessing Props 
 
 Looks like we're all hooked up and ready to go-go!
 
@@ -75,7 +75,7 @@ Now we just need to inject 💉 our card with catty data using JavaScript.
 
 To do this we simply need to replace our hard-coded cat information with our props.
 
-## Step 1
+## Step 2.3
 
 - In the cat cards `<h3>` replace Mr Gwumpy with `{props.props.name}`
 
@@ -83,7 +83,7 @@ To do this we simply need to replace our hard-coded cat information with our pro
 
 Your cat cards should now show other cats names! 
 
-## Step 2
+## Step 2.4
 
 - In the `img` tag, replace the `src` attributes string with `{props.props.photo}` and the `alt` attributes string with `{props.props.alt}`
 
@@ -93,7 +93,7 @@ Your cat cards should now show other cats names!
 
 - Your cat cards should now show other cats pictures with accessible alt attributes. Yay.
 
-## Step 3
+## Step 2.5
 
 - Following the same pattern, can you replace the rest of the hard coded data with props? Remember to check our `useStates()` cat data to check what properties our cat objects have. Or alternatively, you can console.log() props and check your browser console for what property names are there. 
 
@@ -133,11 +133,47 @@ Let's break it down. 🔨
 </pre>
 </details>
 
+
+## Alternatively...
+
+In the above instructions, we pass the entire cat object. 
+
+However, instead of passing the whole cat object:
+
+    ```
+          {cats.map(cat => {
+            return  <CatCard props={cat}/>
+          })}
+
+     ```
+    
+
+We could choose to pass each property individually like this:
+
+    ```
+          {cats.map(cat => {
+            return  <CatCard name={cat.name} species={cat.species} favouriteFoods={cat.favFoods} birthYear={cat.birthYear} />
+          })}
+
+    ```
+
+This would pass the cats name, species, favourite foods and birth year, but wouldn't pass the photo or alt attribute.
+
+Passing props in the above way would mean we'd access them slightly differently. 
+
+In `CatCard.js` we'd access these as `{props.name}`, `{props.species}`, `{props.favouriteFoods}` instead of `{props.props.name}` like we did earlier.
+
+This is because we're already doing one level of dot notation in `App.js`, rather than having to do it in `CatCard.js` because we passed the whole object.
+
+Either way is fine - it's up to you which you prefer. As we want to use all the cats properties, in this tutorial we're going to carry on passing the whole cat object. 
+
+# End of Exercise 5
+
 Phew!
 
 Great job. 
 
-That was a lot to get through but I think you'll agree, our cat cards are looking smashing.
+That was a lot to get through but I think you'll agree, our cat cards are looking smashing and we've learnt a lot!
 
 Don't forget to take a break 🌯
 
