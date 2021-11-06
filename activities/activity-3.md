@@ -21,7 +21,7 @@ In App's return statement, replace the ` {/* And here! */}` comment with your ca
 </pre>
 </details>
 
-Your app should look something like this:
+Your app should now look something like this:
 
 <details>
 <summary>Click here to see the answer</summary>
