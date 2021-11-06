@@ -43,7 +43,9 @@ Simple.
 
           ```
 
-Don't forget to delete your console logs after you've checked them to help keep things tidy.
+You should see "Cat =" followed by each cat object in your browser! 😊
+
+Don't forget to delete your console logs after you've checked them to help keep things tidy. 🧹
 
 Note: you don't have to call props 'props'. In fact, depending on the data or 'properties' that you're passing, it might be better you choose a more suitable name. Other things we might want to call our props in this example could be `CatCard cat={cat} />` or `CatCard data={cat} />`. But we'll leave it as `props` for now so you can remember the lingo. 
 
