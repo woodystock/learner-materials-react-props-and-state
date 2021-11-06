@@ -29,7 +29,7 @@ In this guide we'll be taking a lump (technical term) of cat data, adding it to 
 
 When we talk about State in React, what we're really talking about is the _data_ underpinning our application and how that might _change_. React "reacts" to changes in state/data. Whenever the state of a component changes, the component re-renders.
 
-To use state in React we have to use the `useState()` function. In React speak, this function is called a hook, but we'll come onto what hooks are in another Lab - for now, just know this is an in-built function React offers us to help keep track of our applications changes.
+To use state in React we have to use the `useState()` function. In React speak, this function is called a "hook", but we'll come onto what hooks are in another Lab. For now, just know this is an in-built function React offers us to help keep track of our applications changes.
 
 ## Step 1 - What are we waiting for? Let's use some!
 
@@ -43,7 +43,7 @@ Top tip: type code out rather than copy and paste it. This will help you memoriz
 
 Our `useState()` function returns two values. One value is our state, the other is a method allowing us to manipulate our state.
 
-We use JavaScript "destructuring" to grab these values, like this:
+We use JavaScript "destructuring" to extract these values, like so:
 
 `const [ data, useData ] = useState(*our state/data we want React to watch goes here*)`
 
