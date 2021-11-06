@@ -26,6 +26,3 @@ const dogs = [
 ];
 
 
-export {
-    dogs
-};
