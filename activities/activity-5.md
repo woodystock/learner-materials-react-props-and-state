@@ -18,9 +18,9 @@ You guessed it!
 
 Properties.
 
-## What are "Props"? 🤔
+## What are "Properties"? 🤔
 
-You pass variables to functions, you pass "props" to React components. It's really that simple! Props just means data.
+You pass variables to functions, you pass "props" to React components. It's really that simple! Props just means data. This data could be a string, a number, a piece of state or more often than not, the properties of an object (like our cat objects properties).
 
 How do we do this in React?
 
@@ -33,7 +33,7 @@ Simple.
 `<CatCard props={cat} />`
 
 
-- `{cat}` in this example is the cat object our `.map()` method is looping over. To prove this, add a `console.log()` to our `.map()` function then check your browser console:
+- `{cat}` in this example is the whole cat object our `.map()` method is looping over. To prove this, add a `console.log()` to our `.map()` function then check your browser console:
 
           ```
           {cats.map(cat => {
@@ -47,7 +47,7 @@ You should see "Cat =" followed by each cat object in your browser! 😊
 
 Don't forget to delete your console logs after you've checked them to help keep things tidy. 🧹
 
-Note: you don't have to call props 'props'. In fact, depending on the data or 'properties' that you're passing, it might be better you choose a more suitable name. Other things we might want to call our props in this example could be `CatCard cat={cat} />` or `CatCard data={cat} />`. But we'll leave it as `props` for now so you can remember the lingo. 
+Note: you don't have to call props 'props'. In fact, depending on the data or 'properties' that you're passing, it might be better you choose a more suitable name. Other things we might want to call our props in this example could be `CatCard cat={cat} />`, `CatCard catObject={cat} />` or `CatCard data={cat} />`. But we'll leave it as `props` for now so you can remember the lingo. 
 
 # Step 2 - Receiving Properties
 
@@ -65,7 +65,7 @@ To check our cat card is receiving our cat data properties, add a console log ab
 
 `console.log("CatCard to App, come in App? Do you read me?", props)`
 
-Check your browser console. You should see your console.log() printed lots of times. There will be a small arrow next to each of these logs. If you click on this, a drop down will show you your props - it's just an object!
+Check your browser console. You should see your console.log() printed lots of times. There will be a small arrow next to each of these logs. If you click on this, a drop down will show you your props - they're our cat objects!
 
 # Step 2.2 - Accessing Props 
 
