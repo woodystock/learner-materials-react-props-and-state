@@ -2,7 +2,7 @@
 
 In the last Lab you did (Intro to React & Components) you stripped out a load of JSX code and put each piece (like the cards or the header) into their own components.
 
-Let's do this now but instead of having individual cards for individual cats we're going to have one all seeing, all powerful cat card, that looks different depending on what data we feed it! 🐈 👁
+Let's do this now but instead of having individual cards for individual cats we're going to have one all seeing, all powerful cat card, that looks different depending on what data we feed it! 👁 🐈 
 
 Can you remember how to create a component?
 
@@ -18,7 +18,7 @@ Then read on, to find out how...
 
 - In `components` create a file/component called `CatCard.js`
 
-- Paste in this code to `CatCard.js`:
+- Add this code to `CatCard.js`:
 
 ```
 function CatCard() {
