@@ -385,4 +385,4 @@ Note: You may see a warning that looks a bit like this:
 
 This is just telling us that one of our `useState()` variables isn't being used. Ignore this for now, we come onto this is another lab 🙂
 
-Time to for [Activity 2](./activity-2.md)
+Time to move tp [Activity 2](./activity-2.md)!
