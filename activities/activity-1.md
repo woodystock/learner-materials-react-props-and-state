@@ -367,11 +367,11 @@ export default App;
 </pre>
 </details>
 
-To check it worked, add:
+To check it worked, above our App functions return statement add:
 
 `console.log("Our pretties 😻: ", cats)`
 
-Above our App functions return statement. Then check your browser console.
+Then check your browser console.
 
 You should see the cat data in the console.
 
