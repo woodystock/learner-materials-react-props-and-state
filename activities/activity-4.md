@@ -1,54 +1,46 @@
-# Activity 4
+# Activity 4 - Loop de loop!
 
-Inside our `components` folder create a file called `CindyClawford.js`
+In `App.js` create a loop to render your Cat Card with
 
-Inside of this Cindy Clawford file, type:
+Hint: An ES6 looping method might be a little easier than a traditional forLoop
+Hint: To insert JavaScript into our HTML or 'JSX' you'll need to write your JavaScript code inside a pair of curly braces { }.
+
+<details>
+<summary>Click here to see the answer</summary>
+<pre>
 
 ```
-function CindyClawford() {
+    {cats.map(cat => {
     return (
-
+        <CatCard />
     )
-}
-
-export default CindyClawford;
+    })}
 ```
 
-In App.js copy and paste our Cindy Clawford cat card logic and paste this into our Cindy Clawford component like we did for Navbar and Header
+Ok let's break it down. 🔨
 
-Your Cindy Clawford file should look something like this:
+We first told React we were going to insert some JavaScript into our `App.js` return statement by writing a pair of curly bois (braces)
 
-```
-function CindyClawford() {
-    return (
-           <div className="card">
-            <h2 className="card__text card__header">Cindy Clawford</h2>
-            <img className="card__image" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="A cute tabby kitten"></img>
-            <p className="card__text">Species: Cat</p>
-            <p className="card__text">Favourite Food(s): Mice</p>
-            <p className="card__text">Birth Year: 2012</p>
-          </div>
-    )
-}
+We took our cat data and used the `.map()` method to loop through our cat objects
 
-export default CindyClawford;
-```
+For every cat object in our cat data array, we return a `<CatCard />`
 
-Save `CindyClawford.js`
+Neat 👍
 
-At the top of `App.js` import our new Cindy Clawford component:
+</pre>
+</details>
 
-`import CindyClawford from './components/CindyClawford'`
+Your App should look something like this:
 
-Delete our original Cindy Clawford card code, replacing it with our new Cindy Clawford component:
+<details>
+<summary>Click here to see the result</summary>
+<pre>
 
-`<CindyClawford/>`
+![Cats! Cats everywhere!](../public/act-4-example.png)
 
-Save `App.js`
+</pre>
+</details>
 
-Check the browser
+P.s. don't forget to delete your original `<CatCard />` if you haven't already!
 
-Our app should still work and look the same.. but now our Cindy Clawford card has become a reusable component! 👯‍♂️
-
-Move on to [Activity 5](./activity-5.md)
-
+Time to jive in [Activity 5](./activity-5.md) 💃🕺
