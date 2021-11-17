@@ -114,6 +114,8 @@ You can use the unique key provided on data you get from a database. But sometim
 
 There are lots of different ways to do this. A popular way is using the `npm` package [uuid](https://www.npmjs.com/package/uuid)
 
+UUID is a library which generates new unique IDs on command.
+
 ## Using UUID - Step 1
 
 - In your terminal (make sure you're in the right directory) run:
@@ -128,9 +130,13 @@ At the top of `App.js` import our unique identifier, like so:
 
 ## Using UUID - Step 3
 
-Add a key property to our `CatCard />` component and call `uuid4`
+Use the UUID package to generate ids for each cat in the data - i.e. loop over the array of cats and set an id property on each by calling uuidv4() - this function returns a new ID.
 
-`<CatCard key={uuidv4()} name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt} />`
+## Using UUID - Step 4
+
+Add a key property to our `<CatCard />` component
+
+`<CatCard key={cat.id} name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt} />`
 
 ## Using UUID - Save your file and Check your Browser Console
 
