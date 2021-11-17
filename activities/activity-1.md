@@ -45,13 +45,13 @@ Our `useState()` function returns two values. One value is our state, the other 
 
 We use JavaScript "destructuring" to extract these values, like so:
 
-`const [ data, useData ] = useState(*our state/data we want React to watch goes here*)`
+`const [ data, setData ] = useState(*our state/data we want React to watch goes here*)`
 
 In this application our state is going to be some cat data.
 
 At the top of our `App` function, add this line of code above the return statement:
 
-`const [ cats, useCats ] = useState()`
+`const [ cats, setCats ] = useState()`
 
 Great.
 
@@ -380,7 +380,7 @@ Nice!
 Note: You may see a warning that looks a bit like this:
 
 ```
-  Line 12:17:  'useCats' is assigned a value but never used  no-unused-vars
+  Line 12:17:  'setCats' is assigned a value but never used  no-unused-vars
 ```
 
 This is just telling us that one of our `useState()` variables isn't being used. Ignore this for now, we come onto this is another lab 🙂
