@@ -48,7 +48,7 @@ And we know if we want to access each item in an array we can use some kind of..
 <summary>Click here to see the answer</summary>
 <pre>
 
-For Loop!
+For loop, or an array method such as `map`
 
 Just like we'd loop through a normal array, lets loop through our Cat data! It's just an array of objects after all 😺 ↬
 
