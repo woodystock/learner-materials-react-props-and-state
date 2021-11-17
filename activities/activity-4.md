@@ -3,6 +3,7 @@
 In `App.js` create a loop to render your Cat Card with
 
 Hint: An ES6 looping method might be a little easier than a traditional forLoop
+
 Hint: To insert JavaScript into our HTML or 'JSX' you'll need to write your JavaScript code inside a pair of curly braces { }.
 
 <details>
@@ -10,11 +11,7 @@ Hint: To insert JavaScript into our HTML or 'JSX' you'll need to write your Java
 <pre>
 
 ```
-    {cats.map(cat => {
-    return (
-        <CatCard />
-    )
-    })}
+    {cats.map(cat => <CatCard /> })}
 ```
 
 Ok let's break it down. 🔨
