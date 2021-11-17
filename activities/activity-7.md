@@ -134,7 +134,7 @@ Use the UUID package to generate ids for each cat in the data - i.e. loop over t
 
 ## Using UUID - Step 4
 
-Add a key property to our `<CatCard />` component
+Add this new id  property to our `<CatCard />` component as a key
 
 `<CatCard key={cat.id} name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt} />`
 
