@@ -1,4 +1,4 @@
-# Extension - Chuck Norris Level Ninja 👊
+# Extensions - Chuck Norris Level Ninja 👊
 
 You now have the opportunity to put what you've learnt into practice.
 
@@ -33,6 +33,13 @@ You may have noticed that in our cat cards, our cats favorite foods are squished
 This is because some of the food items are in an array and when they are rendered on the page our program doesn't know there needs to be a white space and comma between each item.
 
 Using what you know about JavaScript, passing props and inserting logic through curly braces {}, could you write some logic so that favorite foods are joined together nicely with a comma separating each food item?
+
+# Extension 3 - Interactivity ⭐
+
+It would be great for our users to be able to add their favourite cats (and dogs?). Can you:
+
+ - Add a form for users to submit new cats, with input text boxes for fields like name, species, fave food, etc. (Hint: the values of these `<input>` elements will need to be stored in state.)
+ - Add a 'submit' button to the form which adds the new cat to the array of cats. (Hint: your onClick handler for the button needs to update the array in state.)
 
 # Well done! 🙌
 
