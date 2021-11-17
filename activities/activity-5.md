@@ -123,7 +123,7 @@ export default CatCard
 
 Let's break it down. 🔨
 
-We are passing `props` into our cat card: `<CatCard props={cat}/>`
+We are passing `props` into our cat card.
 
 Our CatCard receives these props through its parameters: `function CatCard(props)`
 
