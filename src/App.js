@@ -147,7 +147,7 @@ function App() {
       <main>
         <div className="cards__wrapper">
 
-          {/* And here! */} 
+          {cats.map( (cat) => <CatCard />)};
 
         </div>
       </main>
