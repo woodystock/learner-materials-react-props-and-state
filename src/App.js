@@ -7,6 +7,7 @@ import DogCard from './components/DogCard.js'
 import CatForm from './components/CatForm.js'
 import { useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
+import { findByPlaceholderText } from '@testing-library/dom';
 
 function App() {
 
@@ -177,19 +178,51 @@ function App() {
     },
   ]);
 
+  const [formData, setFormData] = useState({
+    cat_name:"",
+    species:"",
+    fav_foods:"",
+    birth_year:"",
+    photo:"",
+    alt:""
+});
+
   const catCount = cats.length;
   const dogCount = dogs.length;
 
   const onSubmitCatForm = (event) => {
-    console.log(event)
+    event.preventDefault();
+    const newCat = {
+      "name": formData.cat_name,
+      "species": formData.species,
+      "favFoods": formData.fav_foods.split(" "),
+      "birthYear": formData.birth_year,
+      "photo": formData.photo,
+      "alt": formData.alt
+    }
+    setCats([...cats, newCat])
+    setFormData({
+      cat_name:"",
+      species:"",
+      fav_foods:"",
+      birth_year:"",
+      photo:"",
+      alt:""
+    })
   }
+
+  const onChangeCatForm = (event) => {
+    const updatedData = {...formData};
+    updatedData[event.target.id] = event.target.value
+    setFormData(updatedData);
+}
 
   return (
     <>
       <Navbar />
       <Header catCount={catCount} dogCount={dogCount}/>
 
-      <CatForm onSubmit={onSubmitCatForm}/>
+      <CatForm formData={formData} onChange={onChangeCatForm} onSubmit={onSubmitCatForm}/>
 
       <main>
         <div className="cards__wrapper">
