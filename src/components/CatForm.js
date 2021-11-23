@@ -1,6 +1,50 @@
 import {useState} from 'react';
 
-function CatForm({formData, onChange, onSubmit}) {
+function CatForm({onSubmitCat}) {
+
+    const [formData, setFormData] = useState({
+        cat_name:"",
+        species:"",
+        fav_foods:"",
+        birth_year:"",
+        photo:"",
+        alt:""
+    });
+
+    const clearForm = () => {
+        setFormData({
+            cat_name:"",
+            species:"",
+            fav_foods:"",
+            birth_year:"",
+            photo:"",
+            alt:""
+        });
+    }
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+        const newCat = {
+          "name": formData.cat_name,
+          "species": formData.species,
+          "favFoods": formData.fav_foods.split(" "),
+          "birthYear": formData.birth_year,
+          "photo": formData.photo,
+          "alt": formData.alt
+        }
+
+        onSubmitCat(newCat);
+
+        clearForm();
+      }
+
+      
+    
+      const onChange = (event) => {
+        const updatedData = {...formData};
+        updatedData[event.target.id] = event.target.value
+        setFormData(updatedData);
+    }
 
 
     return (
