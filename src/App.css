@@ -2,6 +2,7 @@
   --navy: #0D3B66;
   --light: #FAF0CA;
   --yellow: #F4D35E;
+  --green: #43b44d;
   --orange: #EE964B;
   --red: #F95738;
 }
@@ -63,6 +64,12 @@ body {
   margin: .5em;
 }
 
+.card--alt {
+  background: var(--green);
+  border-color: var(--navy);
+
+}
+
 .card:hover {
   box-shadow: 0 4px 8px 0 rgb(13, 59, 102, 0.9);
 }
@@ -72,6 +79,10 @@ body {
   font-family: 'SleepyCat';
   font-size: 1.7rem;
   margin: 0.2em;
+}
+
+.card__text--alt {
+  color: var(--yellow);
 }
 
 .card__header {

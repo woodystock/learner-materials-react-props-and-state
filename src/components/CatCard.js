@@ -8,7 +8,7 @@ function CatCard(props) {
             <h3 className="card__text card__header">{name}</h3>
             <img className="card__image" src={photo} alt={alt}></img>
             <p className="card__text">Species: {species}</p>
-            <p className="card__text">Favourite Food(s): {favFoods}</p>
+            <p className="card__text">Favourite Food(s): {favFoods.join(", ")}</p>
             <p className="card__text">Birth Year: {birthYear}</p>
         </div>
     )
