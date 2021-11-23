@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import CatCard from './components/CatCard.js'
 import { useState } from 'react';
+import {v4 as uuidv4} from 'uuid';
 
 function App() {
 
@@ -136,18 +137,31 @@ function App() {
           "birthYear": 2016,
           "photo": "https://metro.co.uk/wp-content/uploads/2020/05/PRI_150473631-e1588316954238.jpg?quality=90&strip=all",
           "alt": "A dopey looking Siamese cat with its tongue sticking out"
+      },
+      {
+        "name": "Captain Catface",
+        "species": "Sea Cattain",
+        "favFoods": ["fish, rum"],
+        "birthYear": 2016,
+        "photo": "https://cdni.rt.com/files/2016.05/article/5743512dc46188d2298b45a1.jpg",
+        "alt": "A cat wearing a ships captains uniform"
       }
   ]);
+
+  const catCount = cats.length;
 
   return (
     <>
       <Navbar />
-      <Header />
+      <Header catCount={catCount}/>
 
       <main>
         <div className="cards__wrapper">
 
-          {cats.map( (cat) => <CatCard />)};
+          {cats.map( (cat) => {
+            cat.id = uuidv4();
+            return <CatCard key={cat.id} name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt}/>
+          })};
 
         </div>
       </main>
