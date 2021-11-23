@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import CatCard from './components/CatCard.js'
 import DogCard from './components/DogCard.js'
+import CatForm from './components/CatForm.js'
 import { useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
 
@@ -174,15 +175,23 @@ function App() {
         "photo": "https://i.ytimg.com/vi/EFJwJpAJbDA/maxresdefault.jpg",
         "alt": "Doggo with too many balls in it's mouth"
     },
-]);
+  ]);
+
+  const [formData, setFormData] = useState();
 
   const catCount = cats.length;
   const dogCount = dogs.length;
 
+  const onSubmitCatForm = (event) => {
+    console.log(event)
+  }
+
   return (
     <>
       <Navbar />
-      <Header catCount={catCount}/>
+      <Header catCount={catCount} dogCount={dogCount}/>
+
+      <CatForm onSubmit={onSubmitCatForm} {...formData}/>
 
       <main>
         <div className="cards__wrapper">
@@ -190,7 +199,7 @@ function App() {
           {
             cats.map( (cat) => {
               cat.id = uuidv4();
-              return <CatCard key={cat.id} name={cat.name} species={cat.species} favFoods={cat.favFoods} birthYear={cat.birthYear} photo={cat.photo} alt={cat.alt}/>
+              return <CatCard key={cat.id} {...cat}/>
             })
           };
 
@@ -200,7 +209,7 @@ function App() {
           {
           dogs.map( (dog) => {
               dog.id = uuidv4();
-              return <DogCard key={dog.id} name={dog.name} species={dog.species} favFoods={dog.favFoods} birthYear={dog.birthYear} photo={dog.photo} alt={dog.alt}/>
+              return <DogCard key={dog.id} {...dog}/>
             })
           }
         </div>

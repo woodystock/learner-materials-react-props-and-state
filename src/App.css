@@ -2,7 +2,7 @@
   --navy: #0D3B66;
   --light: #FAF0CA;
   --yellow: #F4D35E;
-  --green: #43b44d;
+  --green: #318639;
   --orange: #EE964B;
   --red: #F95738;
 }
@@ -36,6 +36,11 @@ body {
   font-family: 'Cattino';
 }
 
+.header__subtitle {
+  color: var(--green);
+  font-family: 'Cattino';
+}
+
 .header__welcome {
   font-size: 3rem;
   margin-bottom: 0;
@@ -64,10 +69,21 @@ body {
   margin: .5em;
 }
 
+.card__form {
+  padding: 1.5em;
+  border: 6px solid var(--red);
+  min-width: 11.25em;
+  border-radius: 7px;
+  background:var(--yellow);
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px 0 rgb(13, 59, 102, 0.4);
+  transition: 0.3s;
+  margin: .5em;
+}
+
 .card--alt {
   background: var(--green);
   border-color: var(--navy);
-
 }
 
 .card:hover {
@@ -85,6 +101,10 @@ body {
   color: var(--yellow);
 }
 
+.card__input {
+  width: 95%
+}
+
 .card__header {
   font-size: 2rem;
   margin: 0.2em;
@@ -95,6 +115,19 @@ body {
   border-radius: 5px;
   margin-top: .5em;
   margin-bottom: .5em;
+}
+
+.card__button {
+  padding: 1.5em;
+  border: 6px solid var(--red);
+  max-width: 15.625em;
+  min-width: 11.25em;
+  border-radius: 7px;
+  background:var(--yellow);
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px 0 rgb(13, 59, 102, 0.4);
+  transition: 0.3s;
+  margin: .5em;
 }
 
 .links {

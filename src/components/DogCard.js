@@ -1,7 +1,4 @@
-function DogCard(props) {
-
-    const {name, photo, alt, species, favFoods, birthYear} = props;
-
+function DogCard({name, photo, alt, species, favFoods, birthYear}) {
 
     return (
         <div className="card card--alt">

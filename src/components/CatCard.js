@@ -1,7 +1,4 @@
-function CatCard(props) {
-
-    const {name, photo, alt, species, favFoods, birthYear} = props;
-
+function CatCard({name, photo, alt, species, favFoods, birthYear}) {
 
     return (
         <div className="card">
