@@ -1,5 +1,8 @@
 function CatForm({onSubmit, onReset}) {
 
+    const [formData, setFormData] = useState();
+
+
     return (
         <div class="card__form">
             <form onSubmit={onSubmit}>

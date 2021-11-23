@@ -177,8 +177,6 @@ function App() {
     },
   ]);
 
-  const [formData, setFormData] = useState();
-
   const catCount = cats.length;
   const dogCount = dogs.length;
 
