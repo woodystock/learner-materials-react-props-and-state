@@ -1,6 +1,20 @@
+import {useState} from 'react';
+
 function CatForm({onSubmit, onReset}) {
 
-    const [formData, setFormData] = useState();
+    const [formData, setFormData] = useState({
+        cat_name:"",
+        species:"",
+        fav_foods:"",
+        birth_year:"",
+        photo:"",
+    });
+
+    const onChange = (event) => {
+        const updatedData = {...formData};
+        updatedData[event.target.id] = event.target.value
+        setFormData(updatedData);
+    }
 
 
     return (
@@ -9,19 +23,19 @@ function CatForm({onSubmit, onReset}) {
                 <h2 class="card__text card__header">Concat-a-cat</h2>
 
                 <label class="card__text" for="cat_name">Name:</label><br/>
-                <input id="cat_name" class="card__text card__input" type="text" /><br/>
+                <input id="cat_name" class="card__text card__input" type="text" value={formData.cat_name} onChange={onChange} /><br/>
 
                 <label class="card__text" for="species">Species:</label><br/>
-                <input id="species" class="card__text card__input" type="text" /><br/>
+                <input id="species" class="card__text card__input" type="text" value={formData.species} onChange={onChange} /><br/>
 
                 <label class="card__text" for="fav_foods">Favourite Foods:</label><br/>
-                <input id="fav_foods" class="card__text card__input" type="text" /><br/>
+                <input id="fav_foods" class="card__text card__input" type="text" value={formData.fav_foods} onChange={onChange} /><br/>
 
                 <label class="card__text" for="birth_year">Birth Year:</label><br/>
-                <input id="birth_year" class="card__text card__input" type="text" /><br/>
+                <input id="birth_year" class="card__text card__input" type="text" value={formData.birth_year} onChange={onChange} /><br/>
 
                 <label class="card__text" for="photo">Image URL:</label><br/>
-                <input id="photo" class="card__text card__input" type="text" /><br/>
+                <input id="photo" class="card__text card__input" type="text" value={formData.photo} onChange={onChange} /><br/>
 
                 <img class="card__image" src="" /><br/>
 

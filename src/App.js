@@ -189,7 +189,7 @@ function App() {
       <Navbar />
       <Header catCount={catCount} dogCount={dogCount}/>
 
-      <CatForm onSubmit={onSubmitCatForm} {...formData}/>
+      <CatForm onSubmit={onSubmitCatForm}/>
 
       <main>
         <div className="cards__wrapper">
