@@ -184,7 +184,7 @@ function App() {
   const dogCount = dogs.length;
 
   const onSubmitCat = (cat) => {
-    setCats([...cats, cat])
+    setCats((prevCats) => [...prevCats, cat])
   }
 
   return (
