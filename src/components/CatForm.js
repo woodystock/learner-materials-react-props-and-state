@@ -41,9 +41,11 @@ function CatForm({onSubmitCat}) {
       
     
       const onChange = (event) => {
-        const updatedData = {...formData};
-        updatedData[event.target.id] = event.target.value
-        setFormData(updatedData);
+        setFormData((prevData) => {
+            const updatedData = {...formData};
+            updatedData[event.target.id] = event.target.value
+            return updatedData;
+        });
     }
 
 
